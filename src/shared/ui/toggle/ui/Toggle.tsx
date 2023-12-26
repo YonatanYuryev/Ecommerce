@@ -6,10 +6,11 @@ interface ToggleProps {
   className?: string;
   size: "large" | "small";
   status: "on" | "off";
+  onClick: () => void;
 }
 
 const Toggle: FC<ToggleProps> = (props) => {
-  const { className, size, status, ...additional } = props;
+  const { className, size, status, onClick, ...additional } = props;
   return (
     <div
       className={classNames(cls.Toggle, {}, [
@@ -18,11 +19,9 @@ const Toggle: FC<ToggleProps> = (props) => {
         cls[status],
       ])}
       {...additional}
+      onClick={onClick}
     >
-      <label className={classNames(cls.inner)}>
-        <input type="checkbox" checked={status === 'on'} className={classNames(cls.input)} />
-        <span className={classNames(cls.clider)}></span>
-      </label>
+      <span className={classNames(cls.slider, {}, [cls[status], cls[size]])}></span>
     </div>
   );
 };
