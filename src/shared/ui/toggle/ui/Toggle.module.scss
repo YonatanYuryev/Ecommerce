@@ -1,0 +1,52 @@
+.Toggle {
+  border-radius: 50px;
+  cursor: pointer;
+  position: relative;
+}
+
+.Toggle.on {
+  background-color: var(--theme-light-toggler-bgc);
+}
+
+.Toggle.off {
+  background-color: var(--theme-dark-toggler-bgc);
+}
+
+.Toggle.large {
+  width: 54px;
+  height: 30px;
+}
+
+.Toggle.small {
+  width: 42px;
+  height: 24px;
+}
+
+.slider.small {
+  height: 20px;
+  width: 20px;
+}
+.slider.large {
+  height: 25px;
+  width: 25px;
+}
+
+.slider.off,
+.slider.on {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  border-radius: 50%;
+  -webkit-transition: 0.15s;
+  transition: 0.15s;
+  transform: translate(0, -50%);
+}
+
+.slider.off {
+  background-color: var(--dark-bgc);
+}
+
+.slider.on {
+  left: 45%;
+  background-color: var(--theme-light-slider-bgc);
+}

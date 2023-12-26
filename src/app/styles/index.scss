@@ -1,3 +1,36 @@
 @import "./reset.scss";
+@import "./variables/variables.scss";
+@import "./mixins/mixins.scss";
 @import "./themes/light.scss";
 @import "./themes/dark.scss";
+
+body {
+  font-family: var(--body-font);
+  font-size: var(--caption-3-font-size);
+  height: 100vh;
+  width: 100%;
+
+  h1 {
+    @include h1;
+  }
+  h2 {
+    @include h2;
+  }
+  h3 {
+    @include h3;
+  }
+  h4 {
+    @include h4;
+  }
+  h5 {
+    @include h5;
+  }
+  h6 {
+    @include h6;
+  }
+}
+
+.app {
+  width: 100%;
+  height: 100vh;
+}

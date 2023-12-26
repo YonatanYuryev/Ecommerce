@@ -1,0 +1,93 @@
+:root {
+  --primary-light-1: #fff;
+
+  --primary-dark-1: #000;
+  --primary-dark-2: rgba(0, 0, 0, 0.8);
+  --primary-dark-3: rgba(0, 0, 0, 0.6);
+  --primary-dark-4: rgba(0, 0, 0, 0.3);
+  --primary-dark-5: rgba(0, 0, 0, 0.1);
+  --primary-dark-6: rgba(0, 0, 0, 0.05);
+
+  --dark-bgc: #2c2c2c;
+
+  --accent-blue-1: #1156db;
+  --accent-blue-2: #2d74ff;
+  --accent-blue-3: #568fff;
+  --accent-blue-4: #d5e3ff;
+  --accent-blue-5: #f1f4fa;
+
+  --accent-red-1: #e31f43;
+  --accent-red-2: #fa4a69;
+  --accent-red-3: #fb6e87;
+  --accent-red-4: #fedbe1;
+  --accent-red-5: #fef3f5;
+
+  --error-color: #ff4e4e;
+  --alert-color: #feb72f;
+  --success-color: #90da1a;
+
+  --body-light-bgc: #fff;
+  --body-dark-bgc: var(--dark-bgc);
+
+  --theme-light-toggler-bgc: #2d74ff;
+  --theme-light-slider-bgc: #d8dbe0;
+
+  --theme-dark-toggler-bgc: #d8dbe0;
+  --theme-dark-slider-bgc: #d8dbe0;
+
+  --body-font: Inter;
+
+  --caption-1-font-size: 20px;
+  --caption-2-font-size: 18px;
+  --caption-3-font-size: 16px;
+  --caption-4-font-size: 13px;
+
+  --body-font-size-15: 15px;
+  --body-font-size-15-letter-spacing: -0.7px;
+  --body-font-size-15-line-height: 25px;
+
+  --body-font-size-17: 17px;
+  --body-font-size-17-letter-spacing: -0.6px;
+  --body-font-size-17-line-height: 23px;
+
+  --body-font-size-21: 21px;
+  --body-font-size-21-letter-spacing: -0.8px;
+  --body-font-size-21-line-height: 30px;
+
+  --font-weight-r: 400;
+  --font-weight-m: 500;
+
+  --h1-font-size: 120px;
+  --h1-font-w: var(--font-weight-m);
+  --h1-line-height: 120px;
+  --h1-letter-spacing: -6px;
+
+  --h2-font-size: 72px;
+  --h2-font-w: var(--font-weight-m);
+  --h2-line-height: 80px;
+  --h2-letter-spacing: -4.5px;
+
+  --h3-font-size: 64px;
+  --h3-font-w: var(--font-weight-m);
+  --h3-line-height: 70px;
+  --h3-letter-spacing: -3px;
+
+  --h4-font-size: 48px;
+  --h4-font-w: var(--font-weight-m);
+  --h4-line-height: 54px;
+  --h4-letter-spacing: -1.6px;
+
+  --h5-font-size: 36px;
+  --h5-font-w: var(--font-weight-m);
+  --h5-line-height: 44px;
+  --h5-letter-spacing: -1.2px;
+
+  --h6-font-size: 28px;
+  --h6-font-w: var(--font-weight-m);
+  --h6-line-height: 34px;
+  --h6-letter-spacing: -0.8px;
+
+  --desktop-size: 1024px;
+  --tablet-size: 768px;
+  --smartphone-size: 767px;
+}
