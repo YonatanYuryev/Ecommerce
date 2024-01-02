@@ -1,9 +1,12 @@
-import { FC } from "react";
+import { FC } from 'react';
+import { useTranslation } from 'react-i18next';
 
-type Props = {};
+interface ErrorPageProps {}
 
-const ErrorPage: FC = (props: Props) => {
-  return <div>ErrorPage</div>;
+const ErrorPage: FC<ErrorPageProps> = (props) => {
+    const { t } = useTranslation('pages');
+
+    return (<div>{t('Страница не найдена')}</div>);
 };
 
 export default ErrorPage;

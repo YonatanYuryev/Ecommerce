@@ -1,9 +1,14 @@
-import { FC } from "react";
+import { FC } from 'react';
+import { useTranslation } from 'react-i18next';
 
-type Props = {};
+interface CheckoutPageProps {
 
-const CheckoutPage: FC = (props: Props) => {
-  return <div>CheckoutPage</div>;
+}
+
+const CheckoutPage: FC<CheckoutPageProps> = (props) => {
+    const { t } = useTranslation('pages');
+
+    return (<div>{t('Оплата')}</div>);
 };
 
 export default CheckoutPage;
