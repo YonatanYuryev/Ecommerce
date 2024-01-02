@@ -1,9 +1,14 @@
-import { FC } from "react";
+import { FC } from 'react';
+import { useTranslation } from 'react-i18next';
 
-type Props = {};
+interface CartPageProps {
 
-const CartPage: FC = (props: Props) => {
-  return <div>CartPage</div>;
+}
+
+const CartPage: FC<CartPageProps> = (props) => {
+    const { t } = useTranslation('pages');
+
+    return (<div>{t('Корзина')}</div>);
 };
 
 export default CartPage;

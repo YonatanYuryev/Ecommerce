@@ -1,3 +1,3 @@
-import { lazy } from "react";
+import { lazy } from 'react';
 
-export const RestorePageAsync = lazy(() => import("./RestorePage"));
+export const RestorePageAsync = lazy(() => import('./RestorePage'));

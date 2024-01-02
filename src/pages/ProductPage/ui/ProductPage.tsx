@@ -1,9 +1,12 @@
-import { FC } from "react";
+import { FC } from 'react';
+import { useTranslation } from 'react-i18next';
 
-type Props = {};
+interface ProductPageProps {}
 
-const ProductPage: FC = (props: Props) => {
-  return <div>ProductPage</div>;
+const ProductPage: FC<ProductPageProps> = (props) => {
+    const { t } = useTranslation('pages');
+
+    return (<div>{t('Товар')}</div>);
 };
 
 export default ProductPage;

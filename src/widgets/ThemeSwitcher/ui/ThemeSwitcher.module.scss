@@ -1,23 +1,23 @@
-.Toggle {
+.ThemeSwitcher {
   border-radius: 50px;
   cursor: pointer;
   position: relative;
 }
 
-.Toggle.on {
+.ThemeSwitcher.on {
   background-color: var(--theme-light-toggler-bgc);
 }
 
-.Toggle.off {
+.ThemeSwitcher.off {
   background-color: var(--theme-dark-toggler-bgc);
 }
 
-.Toggle.large {
+.ThemeSwitcher.large {
   width: 54px;
   height: 30px;
 }
 
-.Toggle.small {
+.ThemeSwitcher.small {
   width: 42px;
   height: 24px;
 }
@@ -35,7 +35,7 @@
 .slider.on {
   position: absolute;
   top: 50%;
-  left: 10%;
+  left: 5%;
   border-radius: 50%;
   -webkit-transition: 0.15s;
   transition: 0.15s;
@@ -47,6 +47,6 @@
 }
 
 .slider.on {
-  left: 45%;
+  left: 50%;
   background-color: var(--theme-light-slider-bgc);
 }

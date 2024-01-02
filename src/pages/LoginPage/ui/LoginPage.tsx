@@ -1,9 +1,12 @@
-import { FC } from "react";
+import { FC } from 'react';
+import { useTranslation } from 'react-i18next';
 
-type Props = {};
+interface LoginPageProps {}
 
-const LoginPage: FC = (props: Props) => {
-  return <div>LoginPage</div>;
+const LoginPage: FC<LoginPageProps> = (props) => {
+    const { t } = useTranslation('pages');
+
+    return (<div>{t('Логин')}</div>);
 };
 
 export default LoginPage;

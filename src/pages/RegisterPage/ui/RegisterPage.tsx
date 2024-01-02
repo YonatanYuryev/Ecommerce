@@ -1,9 +1,12 @@
-import { FC } from "react";
+import { FC } from 'react';
+import { useTranslation } from 'react-i18next';
 
-type Props = {};
+interface RegisterPageProps {}
 
-const RegisterPage: FC = (props: Props) => {
-  return <div>RegisterPage</div>;
+const RegisterPage: FC<RegisterPageProps> = (props) => {
+    const { t } = useTranslation('pages');
+
+    return (<div>{t('Регистрация')}</div>);
 };
 
 export default RegisterPage;
