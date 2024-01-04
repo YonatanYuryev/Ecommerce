@@ -1,0 +1,11 @@
+.FooterColumn {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 70px;
+}
+
+.FooterLinksList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
