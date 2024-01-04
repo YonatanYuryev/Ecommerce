@@ -1,0 +1,25 @@
+.SearchInput {
+  display: flex;
+  padding: 11px 12px;
+  align-items: center;
+  width: 250px;
+  border-radius: 10px;
+  border: 1px solid var(--primary-dark-5);
+  cursor: pointer;
+
+  & > input {
+    margin-left: 6px;
+  }
+}
+
+.SearchInput.dark {
+  border-color: var(--inverted-dark-theme-label);
+}
+
+.SearchInput.light {
+  border-color: var(--primary-dark-5);
+}
+
+.SearchInput:focus-within {
+  border: 1px solid var(--accent-blue-3);
+}
