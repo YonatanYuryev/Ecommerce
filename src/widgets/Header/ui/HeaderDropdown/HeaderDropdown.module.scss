@@ -1,0 +1,12 @@
+.HeaderDropdown {
+  position: fixed;
+  background-color: var(--primary-light-1);
+  margin-bottom: var(--header-height);
+  border-bottom: 1px solid var(--primary-dark-6);
+  z-index: 999;
+  width: 100%;
+  height: var(--header-dropdown-height);
+  display: flex;
+  padding: 40px 0 20px 0;
+} 
+
