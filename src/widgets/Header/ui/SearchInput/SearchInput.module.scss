@@ -23,3 +23,15 @@
 .SearchInput:focus-within {
   border: 1px solid var(--accent-blue-3);
 }
+
+.SearchIcon.dark {
+  path {
+    fill: var(--grey-light-2);
+  }
+}
+
+.SearchIcon.light {
+  path {
+    fill: var(--primary-dark-1);
+  }
+}

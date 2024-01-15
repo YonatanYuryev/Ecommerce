@@ -1,5 +1,6 @@
 import { FC, LiHTMLAttributes } from 'react';
 import { classNames } from 'shared/lib/classNames/classNames';
+import { useTheme } from 'app/providers/ThemeProvider';
 import cls from './NavbarItem.module.scss';
 import { INavItem } from '../NavbarList/NavbarList.data';
 
@@ -13,6 +14,7 @@ const NavbarItem: FC<NavbarItemProps> = (props) => {
     const {
         className, activeItem, item, ...additional
     } = props;
+    const { theme } = useTheme();
     const active = activeItem === item.id;
 
     return (
@@ -21,7 +23,7 @@ const NavbarItem: FC<NavbarItemProps> = (props) => {
                 classNames(
                     cls.NavbarItem,
                     {},
-                    [className, active && cls.active],
+                    [className, active && cls.active, cls[theme]],
                 )
             }
             {...additional}

@@ -3,6 +3,14 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 25px 30px;
+  padding-inline: 30px;
+  border-bottom: 1px solid var(--primary-dark-6);
+}
+
+.Header.dark {
+  border-bottom: 1px solid var(--grey-light-2);
+}
+
+.Header.light {
   border-bottom: 1px solid var(--primary-dark-6);
 }
