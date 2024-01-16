@@ -1,0 +1,24 @@
+.ProductCard {
+  position: relative;
+}
+
+.ProductImage {
+  width: 100%;
+  height: 100%;
+}
+
+.ProductSale {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: smaller;
+  position: absolute;
+  width: 47px;
+  height: 24px;
+  left: 10px;
+  top: 10px;
+
+  background: var(--accent-red-2);
+  border-radius: 20px;
+  color: var(--primary-light-1);
+}

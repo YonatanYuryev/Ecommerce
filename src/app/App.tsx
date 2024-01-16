@@ -6,6 +6,7 @@ import { LangSwitcher } from 'widgets/LangSwitcher';
 import { Header } from 'widgets/Header';
 import { Footer } from 'widgets/Footer';
 import { Subscription } from 'widgets/Subscription';
+import { ProductItem } from 'widgets/ProductItem';
 import { AppRouter } from './providers/router';
 import { useTheme } from './providers/ThemeProvider/lib/useTheme';
 
@@ -20,6 +21,12 @@ const App: FC = () => {
                 <LangSwitcher />
                 <ThemeSwitcher />
                 <AppRouter />
+                <div style={
+                    { display: 'flex', width: '100%', justifyContent: 'center' }
+                }
+                >
+                    <ProductItem />
+                </div>
                 <Subscription />
                 <Footer />
             </Suspense>
