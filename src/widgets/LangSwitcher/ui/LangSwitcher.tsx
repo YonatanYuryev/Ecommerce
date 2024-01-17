@@ -3,6 +3,7 @@ import { classNames } from 'shared/lib/classNames/classNames';
 import { Button, ThemeButton } from 'shared/ui/Button';
 import { useTheme } from 'app/providers/ThemeProvider';
 import { useTranslation } from 'react-i18next';
+import LanguageIcon from 'shared/assets/icons/language.svg';
 import cls from './LangSwitcher.module.scss';
 
 interface LangSwitcherProps {
@@ -37,6 +38,7 @@ const LangSwitcher: FC<LangSwitcherProps> = (props) => {
             theme={ThemeButton.CLEAR}
             onClick={toggleLan}
         >
+            <LanguageIcon width={20} height={20} />
             {t('Язык')}
         </Button>
     );
