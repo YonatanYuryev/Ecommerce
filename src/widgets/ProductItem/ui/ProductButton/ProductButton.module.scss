@@ -1,0 +1,39 @@
+.ProductButton {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.ButtonInner {
+  width: 40px;
+  height: 40px;
+  background-color: var(--primary-light-1);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &:hover {
+    background-color: var(--accent-blue-3);
+    svg {
+      path {
+        fill: var(--primary-light-1);
+      }
+    }
+  }
+}
+
+.ButtonInner.active {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--accent-blue-2);
+  svg {
+    path {
+      fill: var(--primary-light-1);
+    }
+  }
+}

@@ -20,7 +20,9 @@ const SearchInput: FC<SearchInputProps> = (props) => {
             className={classNames(cls.SearchInput, {}, [className, cls[theme]])}
             htmlFor="search"
         >
-            <SearchIcon />
+            <SearchIcon
+                className={classNames(cls.SearchIcon, {}, [cls[theme]])}
+            />
             <Input
                 placeholder={placeholderText}
                 id="search"

@@ -15,6 +15,18 @@
   margin-left: 40px;
 }
 
-.NavbarItem.active {
+.NavbarItem.active.light {
   color: var(--primary-dark-1);
+}
+
+.NavbarItem.active.dark {
+  color: var(--primary-light-1);
+}
+
+.NavbarItem.light {
+  color: var(--primary-dark-3);
+}
+
+.NavbarItem.dark {
+  color: var(--grey-light-4);
 }

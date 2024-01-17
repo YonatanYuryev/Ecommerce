@@ -1,0 +1,20 @@
+.AlsoLike {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  width: 100%;
+}
+
+.AlsoLikeTitle {
+  color: var(--primary-dark-1);
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 44px;
+  letter-spacing: -1.2px;
+}
+
+.AlsoLikeProductsList {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

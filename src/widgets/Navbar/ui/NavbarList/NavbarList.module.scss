@@ -3,3 +3,14 @@
   justify-content: center;
   align-items: center;
 }
+
+.LogoIcon.dark {
+  path {
+    fill: var(--primary-light-1);
+  }
+}
+.LogoIcon.light {
+  path {
+    fill: var(--primary-dark-1);
+  }
+}
