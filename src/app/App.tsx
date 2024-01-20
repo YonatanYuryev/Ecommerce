@@ -16,7 +16,6 @@ const App: FC = () => {
         <div className={classNames('app', {}, [theme])}>
             <Suspense fallback="">
                 <Header />
-                <main style={{ width: '100%', height: '80vh' }} />
                 <LangSwitcher />
                 <ThemeSwitcher />
                 <AppRouter />

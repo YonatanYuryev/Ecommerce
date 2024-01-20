@@ -1,10 +1,9 @@
 import { FC } from 'react';
 import { classNames } from 'shared/lib/classNames/classNames';
 import { Button } from 'shared/ui/Button';
-import { Input } from 'shared/ui/Input';
 import { useTranslation } from 'react-i18next';
-import { InputTheme } from 'shared/ui/Input/ui/Input';
-import EyeIcon from 'shared/assets/icons/eye.svg';
+import { AppLink } from 'shared/ui/AppLink';
+import { AuthInput } from 'shared/ui/AuthInput';
 import cls from './LoginForm.module.scss';
 
 interface LoginFormProps {
@@ -16,11 +15,18 @@ const LoginForm: FC<LoginFormProps> = (props) => {
     const { t } = useTranslation('translation');
     const placeholder1 = 'Email';
     const placeholder2 = 'Password';
+    const toRegister = '/register';
+    const toForgotPassword = '/reset';
 
     return (
         <div className={classNames(cls.LoginForm, {}, [className])}>
             <div className={classNames(cls.LoginFormTopSection)}>
-                <h3 className={classNames(cls.LoginFormTitle)}>{t('Войти')}</h3>
+                <h3
+                    className={classNames(cls.LoginFormTitle)}
+                >
+                    {t('Войти')}
+
+                </h3>
                 <div className={classNames(cls.LoginFormTopControls)}>
                     <p
                         className={classNames(cls.LoginFormQuestion)}
@@ -28,41 +34,28 @@ const LoginForm: FC<LoginFormProps> = (props) => {
                         {t('У вас нет учетной записи?')}
 
                     </p>
-                    <p
+                    <AppLink
+                        to={toRegister}
                         className={classNames(cls.LoginFormLink)}
                     >
                         {t('Зарегестрироваться')}
 
-                    </p>
+                    </AppLink>
                 </div>
             </div>
-            <label className={classNames(cls.LoginFormInput)}>
-                <Input
-                    theme={InputTheme.CLEAR}
-                    className={classNames(cls.LoginFormField)}
-                    placeholder={placeholder1}
-                />
-            </label>
-            <label className={classNames(cls.LoginFormInput)}>
-                <Input
-                    theme={InputTheme.CLEAR}
-                    className={classNames(cls.LoginFormField)}
-                    placeholder={placeholder2}
-                />
-                <EyeIcon className={classNames(cls.LoginFormInputIcon)} />
-            </label>
+            <AuthInput hasIcon={false} placeholder={placeholder1} />
+            <AuthInput hasIcon placeholder={placeholder2} />
             <Button
                 className={classNames(cls.LoginFormButton)}
             >
                 {t('Логин')}
-
             </Button>
-            <p
+            <AppLink
+                to={toForgotPassword}
                 className={classNames(cls.LostYourPassword)}
             >
                 {t('Забыли пароль?')}
-
-            </p>
+            </AppLink>
         </div>
     );
 };
