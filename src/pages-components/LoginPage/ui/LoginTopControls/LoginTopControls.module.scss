@@ -1,0 +1,37 @@
+.LoginFormTopSection {
+  width: 100%;
+  margin-bottom: 23px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.LoginFormTopControls {
+  display: flex;
+  gap: 5px;
+}
+
+.LoginFormTitle {
+  color: var(--primary-dark-1);
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 34px;
+  letter-spacing: -0.8px;
+}
+
+.LoginFormQuestion {
+  color: var(--primary-dark-4);
+  font-size: 13px;
+  letter-spacing: -0.2px;
+  font-weight: 500;
+  line-height: 15px; 
+}
+
+.LoginFormLink {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 15px; 
+  letter-spacing: -0.2px;
+  color: var(--accent-blue-2);
+  cursor: pointer;
+}

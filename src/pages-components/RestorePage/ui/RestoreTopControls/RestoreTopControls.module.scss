@@ -1,0 +1,38 @@
+.RestoreFormTopSection {
+  width: 100%;
+  margin-bottom: 23px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.RestoreFormTopControls {
+  display: flex;
+  gap: 5px;
+}
+
+.RestoreFormTitle {
+  color: var(--primary-dark-1);
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 34px;
+  letter-spacing: -0.8px;
+}
+
+.RestoreFormQuestion {
+  color: var(--primary-dark-4);
+  font-size: 13px;
+  letter-spacing: -0.2px;
+  font-weight: 500;
+  line-height: 15px; 
+}
+
+.RestoreFormLink {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 15px; 
+  letter-spacing: -0.2px;
+  color: var(--accent-blue-2);
+  cursor: pointer;
+}

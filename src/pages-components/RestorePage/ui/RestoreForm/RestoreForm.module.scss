@@ -1,4 +1,4 @@
-.LoginForm {
+.RestoreForm {
   margin: 0 auto;
   margin-top: 165px;
   background-color: var(--primary-light-1);
@@ -11,13 +11,13 @@
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
-.LoginFormInner {
+.RestoreFormInner {
   width: 100%;
   display: flex;
   flex-direction: column;
 }
 
-.LoginFormButton {
+.RestoreFormButton {
   display: flex;
   width: 100%;
   height: 50px;
@@ -37,12 +37,16 @@
   margin-bottom: 20px;
 }
 
-.LostYourPassword {
-  color: var(--accent-blue-2);
+.PrivacyPolicy {
+  color: var(--primary-dark-3);
   font-size: 13px;
   font-weight: 500;
-  line-height: 15px;
+  line-height: 18px;
   letter-spacing: -0.2px;
-  cursor: pointer;
-  align-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  & > p:last-child {
+    color: var(--primary-dark-2);
+  }
 }

@@ -19,5 +19,9 @@
   "Восстановить": "Restore",
   "У вас нет учетной записи?": "Don’t have an account?",
   "Забыли пароль?": "Lost your password?",
-  "Язык": "Lan"
+  "Язык": "Lan",
+  "У вас уже есть аккаунт?": "Already have an account?",
+  "Входя в свою учетную запись, вы соглашаетесь с нашей Политикой конфиденциальности и Условиями использования.": "By signing in to your account you agree with our Privacy Policy and Terms of Use.",
+  "Отправить": "Send",
+  "Восстановить пароль": "Restore password"
 }
