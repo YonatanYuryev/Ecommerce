@@ -34,7 +34,6 @@ const PriceFilters: FC<PriceFiltersProps> = (props) => {
                         key={item}
                     >
                         {item}
-
                     </li>
                 ))}
             </ul>
