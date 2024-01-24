@@ -10,7 +10,6 @@ interface LoginTopControlsProps {
 
 const LoginTopControls: FC<LoginTopControlsProps> = (props) => {
     const { className } = props;
-    const toRegister = '/register';
     const { t } = useTranslation('translation');
 
     return (
@@ -29,7 +28,7 @@ const LoginTopControls: FC<LoginTopControlsProps> = (props) => {
 
                 </p>
                 <AppLink
-                    to={toRegister}
+                    to='/register'
                     className={classNames(cls.LoginFormLink)}
                 >
                     {t('Зарегестрироваться')}

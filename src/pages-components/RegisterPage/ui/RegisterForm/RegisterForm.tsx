@@ -12,10 +12,6 @@ interface RegisterFormProps {
 
 const RegisterForm: FC<RegisterFormProps> = (props) => {
     const { className } = props;
-    const placeholder1 = 'Name';
-    const placeholder2 = 'Email';
-    const placeholder3 = 'Password';
-    const placeholder4 = 'Confirm Password';
     const { t } = useTranslation('translation');
     const privacy = 'By signing in to your account you agree with our';
     const policy = 'Privacy Policy and Terms of Use.';
@@ -24,10 +20,10 @@ const RegisterForm: FC<RegisterFormProps> = (props) => {
         <div className={classNames(cls.RegisterForm, {}, [className])}>
             <div className={classNames(cls.RegisterFormInner)}>
                 <RegisterTopControls />
-                <AuthInput hasIcon={false} placeholder={placeholder1} />
-                <AuthInput hasIcon={false} placeholder={placeholder2} />
-                <AuthInput hasIcon placeholder={placeholder3} />
-                <AuthInput hasIcon placeholder={placeholder4} />
+                <AuthInput hasIcon={false} placeholder="Name" />
+                <AuthInput hasIcon={false} placeholder="Email" />
+                <AuthInput hasIcon placeholder="Password" />
+                <AuthInput hasIcon placeholder="Confirm Password" />
                 <Button
                     className={classNames(cls.RegisterFormButton)}
                 >

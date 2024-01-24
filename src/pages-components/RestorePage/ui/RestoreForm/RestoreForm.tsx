@@ -12,14 +12,13 @@ interface RestoreFormProps {
 
 const RestoreForm: FC<RestoreFormProps> = (props) => {
     const { className } = props;
-    const placeholder1 = 'Your Email';
     const { t } = useTranslation('translation');
 
     return (
         <div className={classNames(cls.RestoreForm, {}, [className])}>
             <div className={classNames(cls.RestoreFormInner)}>
                 <RestoreTopControls />
-                <AuthInput hasIcon={false} placeholder={placeholder1} />
+                <AuthInput hasIcon={false} placeholder="Your Email" />
                 <Button
                     className={classNames(cls.RestoreFormButton)}
                 >

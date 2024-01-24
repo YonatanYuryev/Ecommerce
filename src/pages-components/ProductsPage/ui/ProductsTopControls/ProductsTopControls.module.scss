@@ -1,0 +1,13 @@
+.ProductsTopControls {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: fit-content;
+}
+
+.LeftPanel {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}

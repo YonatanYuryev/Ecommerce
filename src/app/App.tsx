@@ -5,9 +5,8 @@ import { classNames } from 'shared/lib/classNames/classNames';
 import { LangSwitcher } from 'widgets/LangSwitcher';
 import { Header } from 'widgets/Header';
 import { Footer } from 'widgets/Footer';
-import { RegisterPage } from 'pages-components/RegisterPage';
-import LoginPage from 'pages-components/LoginPage/ui/LoginPage/LoginPage';
 import { RestorePage } from 'pages-components/RestorePage';
+import { ProductsPage } from 'pages-components/ProductsPage';
 import { AppRouter } from './providers/router';
 import { useTheme } from './providers/ThemeProvider/lib/useTheme';
 
@@ -21,8 +20,7 @@ const App: FC = () => {
                 <LangSwitcher />
                 <ThemeSwitcher />
                 <AppRouter />
-                {/* <RegisterPage /> */}
-                {/* <LoginPage /> */}
+                <ProductsPage />
                 <RestorePage />
                 <Footer />
             </Suspense>

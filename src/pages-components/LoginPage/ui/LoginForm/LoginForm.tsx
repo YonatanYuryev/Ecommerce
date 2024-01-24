@@ -14,23 +14,20 @@ interface LoginFormProps {
 const LoginForm: FC<LoginFormProps> = (props) => {
     const { className } = props;
     const { t } = useTranslation('translation');
-    const placeholder1 = 'Email';
-    const placeholder2 = 'Password';
-    const toForgotPassword = '/reset';
 
     return (
         <div className={classNames(cls.LoginForm, {}, [className])}>
             <div className={classNames(cls.LoginFormInner)}>
                 <LoginTopControls />
-                <AuthInput hasIcon={false} placeholder={placeholder1} />
-                <AuthInput hasIcon placeholder={placeholder2} />
+                <AuthInput hasIcon={false} placeholder="Email" />
+                <AuthInput hasIcon placeholder="Password" />
                 <Button
                     className={classNames(cls.LoginFormButton)}
                 >
                     {t('Логин')}
                 </Button>
                 <AppLink
-                    to={toForgotPassword}
+                    to='/reset'
                     className={classNames(cls.LostYourPassword)}
                 >
                     {t('Забыли пароль?')}

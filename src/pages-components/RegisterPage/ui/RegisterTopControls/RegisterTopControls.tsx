@@ -11,7 +11,6 @@ interface RegisterTopControlsProps {
 const RegisterTopControls: FC<RegisterTopControlsProps> = (props) => {
     const { className } = props;
     const { t } = useTranslation();
-    const toLogin = '/login';
 
     return (
         <div
@@ -31,7 +30,7 @@ const RegisterTopControls: FC<RegisterTopControlsProps> = (props) => {
 
                 </p>
                 <AppLink
-                    to={toLogin}
+                    to="/login"
                     className={classNames(cls.RegisterFormLink)}
                 >
                     {t('Войти')}
