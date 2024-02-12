@@ -1,43 +1,34 @@
 import { FC } from 'react';
 import { classNames } from 'shared/lib/classNames/classNames';
-import { useTranslation } from 'react-i18next';
 import AngleDropdown from 'shared/assets/icons/angle-filters.svg';
-import cls from './SizeFilters.module.scss';
+import { useTranslation } from 'react-i18next';
+import cls from './CollectionFilters.module.scss';
 import FilterItem from '../FilterItem/FilterItem';
 
-interface SizeFiltersProps {
+interface CollectionFiltersProps {
   className?: string;
 }
 
-const SizeFilters: FC<SizeFiltersProps> = (props) => {
+const CollectionFilters: FC<CollectionFiltersProps> = (props) => {
     const { className } = props;
     const { t } = useTranslation('translation');
-    const menu = [
-        'XS',
-        'S',
-        'M',
-        'L',
-        'XL',
-        'XXL',
-    ];
 
+    const menu: string[] = [];
     return (
-        <div className={classNames(cls.SizeFilters, {}, [className])}>
+        <div className={classNames(cls.CollectionFilters, {}, [className])}>
             <div
-                className={classNames(cls.SizeTitle)}
+                className={classNames(cls.CollectionTitle)}
             >
-                {t('Размер')}
+                {t('Коллекция')}
                 <AngleDropdown />
             </div>
-            <ul className={classNames(cls.SizeList)}>
+            <ul className={classNames(cls.CollectionList)}>
                 {menu.map((item) => (
                     <FilterItem
-                        hasInput
-                        inputType="checkbox"
+                        hasInput={false}
                         key={item}
                     >
                         {item}
-
                     </FilterItem>
                 ))}
             </ul>
@@ -45,4 +36,4 @@ const SizeFilters: FC<SizeFiltersProps> = (props) => {
     );
 };
 
-export default SizeFilters;
+export default CollectionFilters;

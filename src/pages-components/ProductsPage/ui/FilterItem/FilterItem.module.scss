@@ -1,0 +1,27 @@
+.FilterItem {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+
+  color: var(--primary-dark-1);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: -0.5px;
+  flex: 1;
+  padding-block: 5px;
+  padding-left: 2px;
+  border-radius: 5px;
+
+  &:hover {
+    background-color: var(--primary-dark-6);
+  }
+  &:active {
+    background-color: var(--accent-blue-3);
+    color: var(--primary-light-1);
+  }
+}
+
+.FilterLabel {
+  cursor: pointer;
+}

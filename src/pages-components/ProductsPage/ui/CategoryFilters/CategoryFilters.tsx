@@ -3,6 +3,7 @@ import { classNames } from 'shared/lib/classNames/classNames';
 import { useTranslation } from 'react-i18next';
 import AngleDropdown from 'shared/assets/icons/angle-filters.svg';
 import cls from './CategoryFilters.module.scss';
+import FilterItem from '../FilterItem/FilterItem';
 
 interface CategoryFiltersProps {
   className?: string;
@@ -34,13 +35,12 @@ const CategoryFilters: FC<CategoryFiltersProps> = (props) => {
             </div>
             <ul className={classNames(cls.CategoryList)}>
                 {menu.map((item) => (
-                    <li
-                        className={classNames(cls.CategoryItem)}
+                    <FilterItem
+                        hasInput={false}
                         key={item}
                     >
                         {item}
-
-                    </li>
+                    </FilterItem>
                 ))}
             </ul>
         </div>

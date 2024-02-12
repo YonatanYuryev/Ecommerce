@@ -26,5 +26,9 @@
   "Восстановить пароль": "Restore password",
   "Категория": "Category",
   "Цена": "Price",
-  "Размер": "Size"
+  "Размер": "Size",
+  "Бренд": "Brand",
+  "Коллекция": "Collection",
+  "Сезон": "Season",
+  "Стиль": "Style"
 }

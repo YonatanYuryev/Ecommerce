@@ -2,7 +2,9 @@ import { FC } from 'react';
 import { classNames } from 'shared/lib/classNames/classNames';
 import { useTranslation } from 'react-i18next';
 import AngleDropdown from 'shared/assets/icons/angle-filters.svg';
+import { Radio } from 'shared/ui/Radio';
 import cls from './PriceFilters.module.scss';
+import FilterItem from '../FilterItem/FilterItem';
 
 interface PriceFiltersProps {
   className?: string;
@@ -29,12 +31,13 @@ const PriceFilters: FC<PriceFiltersProps> = (props) => {
             </div>
             <ul className={classNames(cls.PriceList)}>
                 {menu.map((item) => (
-                    <li
-                        className={classNames(cls.PriceItem)}
+                    <FilterItem
+                        hasInput
+                        inputType="checkbox"
                         key={item}
                     >
                         {item}
-                    </li>
+                    </FilterItem>
                 ))}
             </ul>
         </div>

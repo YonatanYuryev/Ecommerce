@@ -2,34 +2,33 @@ import { FC } from 'react';
 import { classNames } from 'shared/lib/classNames/classNames';
 import { useTranslation } from 'react-i18next';
 import AngleDropdown from 'shared/assets/icons/angle-filters.svg';
-import cls from './SizeFilters.module.scss';
+import cls from './BrandFilters.module.scss';
 import FilterItem from '../FilterItem/FilterItem';
 
-interface SizeFiltersProps {
+interface BrandFiltersProps {
   className?: string;
 }
 
-const SizeFilters: FC<SizeFiltersProps> = (props) => {
+const BrandFilters: FC<BrandFiltersProps> = (props) => {
     const { className } = props;
     const { t } = useTranslation('translation');
-    const menu = [
-        'XS',
-        'S',
-        'M',
-        'L',
-        'XL',
-        'XXL',
+    const menu: string[] = [
+        'Levi`s',
+        'Jungmaven',
+        'Sunspel',
+        'Uniqlo',
+        'Aime Leon Dore',
     ];
 
     return (
-        <div className={classNames(cls.SizeFilters, {}, [className])}>
+        <div className={classNames(cls.BrandFilters, {}, [className])}>
             <div
-                className={classNames(cls.SizeTitle)}
+                className={classNames(cls.BrandTitle)}
             >
-                {t('Размер')}
+                {t('Бренд')}
                 <AngleDropdown />
             </div>
-            <ul className={classNames(cls.SizeList)}>
+            <ul className={classNames(cls.BrandList)}>
                 {menu.map((item) => (
                     <FilterItem
                         hasInput
@@ -37,7 +36,6 @@ const SizeFilters: FC<SizeFiltersProps> = (props) => {
                         key={item}
                     >
                         {item}
-
                     </FilterItem>
                 ))}
             </ul>
@@ -45,4 +43,4 @@ const SizeFilters: FC<SizeFiltersProps> = (props) => {
     );
 };
 
-export default SizeFilters;
+export default BrandFilters;

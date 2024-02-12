@@ -2,42 +2,38 @@ import { FC } from 'react';
 import { classNames } from 'shared/lib/classNames/classNames';
 import { useTranslation } from 'react-i18next';
 import AngleDropdown from 'shared/assets/icons/angle-filters.svg';
-import cls from './SizeFilters.module.scss';
+import cls from './StyleFilters.module.scss';
 import FilterItem from '../FilterItem/FilterItem';
 
-interface SizeFiltersProps {
+interface StyleFiltersProps {
   className?: string;
 }
 
-const SizeFilters: FC<SizeFiltersProps> = (props) => {
+const StyleFilters: FC<StyleFiltersProps> = (props) => {
     const { className } = props;
     const { t } = useTranslation('translation');
-    const menu = [
-        'XS',
-        'S',
-        'M',
-        'L',
-        'XL',
-        'XXL',
+    const menu: string[] = [
+        'All styles',
+        'A-Line',
+        'Graphic T-Shirts',
     ];
 
     return (
-        <div className={classNames(cls.SizeFilters, {}, [className])}>
+        <div className={classNames(cls.StyleFilters, {}, [className])}>
             <div
-                className={classNames(cls.SizeTitle)}
+                className={classNames(cls.StyleTitle)}
             >
-                {t('Размер')}
+                {t('Стиль')}
                 <AngleDropdown />
             </div>
-            <ul className={classNames(cls.SizeList)}>
+            <ul className={classNames(cls.StyleList)}>
                 {menu.map((item) => (
                     <FilterItem
                         hasInput
-                        inputType="checkbox"
+                        inputType="radio"
                         key={item}
                     >
                         {item}
-
                     </FilterItem>
                 ))}
             </ul>
@@ -45,4 +41,4 @@ const SizeFilters: FC<SizeFiltersProps> = (props) => {
     );
 };
 
-export default SizeFilters;
+export default StyleFilters;

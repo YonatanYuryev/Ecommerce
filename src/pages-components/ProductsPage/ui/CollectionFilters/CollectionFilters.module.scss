@@ -1,10 +1,10 @@
-.SizeFilters {
+.CollectionFilters {
   border-top: 1px solid var(--primary-dark-5);
   padding-top: 10px;
   width: 100%;
 }
 
-.SizeTitle {
+.CollectionTitle {
   color: var(--primary-dark-1);
   font-size: 18px;
   font-weight: 500;
@@ -18,15 +18,14 @@
   cursor: pointer;
 }
 
-.SizeList {
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+.CollectionList {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
   margin-bottom: 10px;
 }
 
-.SizeItem {
+.CollectionItem {
   color: var(--primary-dark-1);
   font-size: 16px;
   font-weight: 400;
