@@ -1,0 +1,74 @@
+.ProductsDropdown {
+  width: 135px;
+  height: 40px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ProductsDropdownDefaultValue {
+  width: 100%;
+  padding: 10px 7px 10px 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid var(--primary-dark-5);
+  border-radius: 10px;
+  cursor: pointer;
+  text-transform: capitalize;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px; 
+  letter-spacing: -0.5px;
+}
+
+.ProductsDropdownList {
+  position: absolute;
+  top: 42px;
+  left: 0;
+  width: calc(100% - 6px);
+  height: fit-content;
+  border: 1px solid var(--primary-dark-5);
+  border-radius: 10px;
+  display: grid;
+  row-gap: 0.5vh;
+  z-index: 20;
+  background: var(--primary-light-1);
+  box-shadow: 0 1px 1px var(--dropdown-bgc-shadow);
+  animation: DropdownListAnimation 300ms ease-in-out;
+  transform-origin: top center;
+  padding: 3px;
+
+  display: none;
+}
+
+.ProductsDropdownItem {
+  padding-left: 10px;
+  display: flex;
+  align-items: center;
+  height: 50px;
+  width: calc(100% - 10px);
+  font-size: 16px;
+  font-weight: 400;
+  cursor: pointer;
+  &:hover {
+    background: var(--primary-dark-6);
+    border-radius: 5px;
+  }
+  &:active {
+    background: var(--accent-blue-2);
+    color: var(--primary-light-1);
+  }
+}
+
+@keyframes DropdownListAnimation {
+  0% {
+    transform: rotateX(-90deg);
+    opacity: 0.2;
+  }
+  100% {
+    transform: rotateX(0deg);
+    opacity: 1;
+  }
+}

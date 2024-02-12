@@ -1,0 +1,31 @@
+.Radio {
+  appearance: none;
+  width: 16.5px;
+  height: 16.5px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 1px solid var(--primary-dark-4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.Radio:disabled {
+  background-color: var(--primary-dark-5);
+  border: 1px solid transparent;
+  cursor: not-allowed;
+}
+
+.Radio:checked {
+  background-color: var(--accent-blue-2);
+  border: 1px solid transparent;
+}
+
+.Radio:checked::after {
+  content: '';
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--primary-light-1);
+}

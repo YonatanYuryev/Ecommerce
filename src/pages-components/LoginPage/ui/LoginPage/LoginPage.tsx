@@ -1,6 +1,7 @@
 import { FC } from 'react';
 import { classNames } from 'shared/lib/classNames/classNames';
 import { Container } from 'shared/ui/Container';
+import { BreadCrumbs } from 'widgets/BreadCrumbs';
 import cls from './LoginPage.module.scss';
 import LoginForm from '../LoginForm/LoginForm';
 
@@ -13,6 +14,7 @@ const LoginPage: FC<LoginPageProps> = (props) => {
     return (
         <div className={classNames(cls.LoginPage, {}, [className])}>
             <Container>
+                <BreadCrumbs />
                 <LoginForm />
             </Container>
         </div>

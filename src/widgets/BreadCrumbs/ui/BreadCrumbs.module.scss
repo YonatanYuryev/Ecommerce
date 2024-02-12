@@ -1,0 +1,20 @@
+
+
+.BreadCrumbsList {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.BreadCrumbsItem, .BreadCrumbsSlash {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 20px; 
+  letter-spacing: -0.3px;
+  color: var(--primary-dark-4);
+  text-transform: capitalize;
+}
+
+.BreadCrumbsItem:last-child {
+  color: var(--primary-dark-1);
+}

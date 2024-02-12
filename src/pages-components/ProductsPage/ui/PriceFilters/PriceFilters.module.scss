@@ -1,0 +1,47 @@
+.PriceFilters {
+  border-top: 1px solid var(--primary-dark-5);
+  padding-top: 10px;
+  width: 100%;
+}
+
+.PriceTitle {
+  color: var(--primary-dark-1);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 20px; 
+  letter-spacing: -0.3px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.PriceList {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin-bottom: 10px;
+}
+
+.PriceItem {
+  color: var(--primary-dark-1);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: -0.5px;
+  cursor: pointer;
+  flex: 1;
+  padding-block: 5px;
+  padding-left: 2px;
+  border-radius: 5px;
+
+  &:hover {
+    background-color: var(--primary-dark-6);
+  }
+  &:active {
+    background-color: var(--accent-blue-3);
+    color: var(--primary-light-1);
+  }
+}
