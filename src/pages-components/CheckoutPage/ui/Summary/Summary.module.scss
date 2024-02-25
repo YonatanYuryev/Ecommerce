@@ -1,0 +1,58 @@
+.Summary {
+  padding: 23px 30px;
+  max-width: 330px;
+  border: 1px solid var(--primary-dark-5);
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.Title {
+  font-size: 28px;
+  font-weight: 500;
+  color: var(--primary-dark-1);
+  line-height: 34px;
+  letter-spacing: -0.8px;
+  margin-bottom: 20px;
+}
+
+.Subtotal, .EstimatedShippingHandling, .Promocode {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Label, .Price {
+  color: var(--primary-dark-1);
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 23px;
+  letter-spacing: -0.6px;
+}
+
+.Promocode > .Price {
+  color: var(--accent-blue-2);
+}
+
+.Subtotal, .EstimatedShippingHandling {
+  margin-bottom: 16px;
+}
+
+.Promocode {
+  margin-bottom: 30px;
+}
+
+.Total {
+  border-top: 1px solid var(--primary-dark-5);
+  padding-top: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Total > * {
+  color: var(--primary-dark-1);
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: -0.6px;
+  font-weight: 500;
+}

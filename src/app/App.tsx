@@ -5,8 +5,7 @@ import { classNames } from 'shared/lib/classNames/classNames';
 import { LangSwitcher } from 'widgets/LangSwitcher';
 import { Header } from 'widgets/Header';
 import { Footer } from 'widgets/Footer';
-import { RestorePage } from 'pages-components/RestorePage';
-import { ProductsPage } from 'pages-components/ProductsPage';
+import { CheckoutPage } from 'pages-components/CheckoutPage';
 import { AppRouter } from './providers/router';
 import { useTheme } from './providers/ThemeProvider/lib/useTheme';
 
@@ -17,11 +16,10 @@ const App: FC = () => {
         <div className={classNames('app', {}, [theme])}>
             <Suspense fallback="">
                 <Header />
-                <LangSwitcher />
-                <ThemeSwitcher />
-                <AppRouter />
-                <ProductsPage />
-                <RestorePage />
+                {/* <LangSwitcher /> */}
+                {/* <ThemeSwitcher /> */}
+                {/* <AppRouter /> */}
+                <CheckoutPage />
                 <Footer />
             </Suspense>
         </div>
