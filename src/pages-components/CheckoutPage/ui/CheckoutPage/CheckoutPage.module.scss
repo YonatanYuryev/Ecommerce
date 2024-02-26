@@ -1,3 +1,25 @@
 .CheckoutPage {
   min-height: 1315px;
 }
+
+.ContentContainer {
+  display: grid;
+  grid-template-areas: 
+  'Breadcrumbs Breadcrumbs'
+  'ProductsInfoPanel UserPanel'
+  ;
+  column-gap: 80px;
+}
+
+.Breadcrumbs {
+  grid-area: Breadcrumbs;
+  margin-top: 30px;
+  margin-bottom: 42px;
+}
+
+.ProductsInfoPanel {
+  grid-area: ProductsInfoPanel;
+}
+.UserPanel {
+  grid-area: UserPanel;
+}

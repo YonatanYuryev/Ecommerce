@@ -12,7 +12,7 @@ const Radio: FC<RadioProps> = (props) => {
     } = props;
     return (
         <input
-            type="radio"
+            type="checkbox"
             id={id}
             checked={checked}
             disabled={disabled}

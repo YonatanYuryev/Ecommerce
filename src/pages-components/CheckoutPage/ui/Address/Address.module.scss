@@ -1,4 +1,4 @@
-.Contacts {
+.Address {
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -50,6 +50,43 @@
   &:hover {
     color: var(--accent-blue-2);
   }
+}
+
+.RadioInputWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.RadioInputs {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.RadioLabel {
+  color: var(--primary-dark-1);
+}
+
+.RadioLabel::after {
+  content: 'Free, 10 – 14 days';
+  margin-left: 10px;
+  color: var(--label-color);
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: -0.3px;
+  font-weight: 400;
+}
+
+.RadioLabel::after {
+  content: '$10, 1 – 3 days';
+  margin-left: 10px;
+  color: var(--label-color);
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: -0.3px;
+  font-weight: 400;
 }
 
 .Input {
