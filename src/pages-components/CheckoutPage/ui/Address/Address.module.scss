@@ -62,14 +62,14 @@
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  gap: 125px;
 }
 
 .RadioLabel {
   color: var(--primary-dark-1);
 }
 
-.RadioLabel::after {
+.StandartLabel::after {
   content: 'Free, 10 – 14 days';
   margin-left: 10px;
   color: var(--label-color);
@@ -79,7 +79,7 @@
   font-weight: 400;
 }
 
-.RadioLabel::after {
+.PremiumLabel::after {
   content: '$10, 1 – 3 days';
   margin-left: 10px;
   color: var(--label-color);
@@ -89,7 +89,14 @@
   font-weight: 400;
 }
 
-.Input {
+.AddressInputWrapper, .WishesInputWrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.Input, .AddressInput {
   appearance: none;
   padding: 15px;
   border-radius: 10px;
@@ -99,5 +106,42 @@
   transition: all .25s ease-in-out;
   &:focus-within {
     border: 1px solid var(--accent-blue-2);
+  }
+}
+
+.AddressInputUpperSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ChooseOnMap {
+  color: var(--accent-blue-2);
+  font-size: 13px;
+  line-height: 15px;
+  font-weight: 500;
+  letter-spacing: -0.2px;
+  cursor: pointer;
+}
+
+.AddressInput {
+  width: calc(100% - 30px);
+  flex: 1;
+}
+
+.WishesInput {
+  width: calc(100% - 30px);
+  flex: 1;
+  appearance: none;
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid var(--primary-dark-5);
+  cursor: pointer;
+  &:focus-within {
+    border: 1px solid var(--accent-blue-2);
+  }
+  resize: vertical;
+  &::placeholder {
+    color: var(--label-color);
   }
 }

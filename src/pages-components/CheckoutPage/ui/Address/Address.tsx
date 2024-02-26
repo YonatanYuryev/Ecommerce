@@ -52,7 +52,7 @@ const Address: FC<AddressProps> = (props) => {
                         <Radio id="Standart" />
                         <label
                             className={
-                                classNames(cls.Label, {}, [cls.RadioLabel])
+                                classNames(cls.Label, {}, [cls.StandartLabel])
                             }
                             htmlFor="Standart"
                         >
@@ -65,13 +65,46 @@ const Address: FC<AddressProps> = (props) => {
                         <Radio id="Premium" />
                         <label
                             className={
-                                classNames(cls.Label, {}, [cls.RadioLabel])
+                                classNames(cls.Label, {}, [cls.PremiumLabel])
                             }
                             htmlFor="Premium"
                         >
                             {t('Премиум')}
                         </label>
                     </div>
+                </div>
+                <div className={classNames(cls.AddressInputWrapper)}>
+                    <div className={classNames(cls.AddressInputUpperSection)}>
+                        <label
+                            className={classNames(cls.Label)}
+                            htmlFor="address"
+                        >
+                            {t('Адрес')}
+                        </label>
+                        <p
+                            className={classNames(cls.ChooseOnMap)}
+                        >
+                            {t('Выбрать на карте')}
+                        </p>
+                    </div>
+                    <Input
+                        className={classNames(cls.AddressInput)}
+                        id="address"
+                        theme={InputTheme.CLEAR}
+                    />
+                </div>
+                <div className={classNames(cls.WishesInputWrapper)}>
+                    <label
+                        className={classNames(cls.Label)}
+                        htmlFor="wishes"
+                    >
+                        {t('Пожелания')}
+                    </label>
+                    <textarea
+                        placeholder="Type your wishes"
+                        className={classNames(cls.WishesInput)}
+                        id="wishes"
+                    />
                 </div>
             </div>
         </div>
