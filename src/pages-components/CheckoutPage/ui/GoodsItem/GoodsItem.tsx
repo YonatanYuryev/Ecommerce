@@ -13,7 +13,7 @@ const GoodsItem: FC<GoodsItemProps> = (props) => {
     const { t } = useTranslation();
 
     return (
-        <li className={classNames(cls.GoodsItem)}>
+        <li className={classNames(cls.GoodsItem, {}, [className])}>
             <img className={classNames(cls.Image)} src={`${imgUrl}`} alt="I" />
             <div className={classNames(cls.RightPanel)}>
                 <p className={classNames(cls.Id)}>#7142</p>
