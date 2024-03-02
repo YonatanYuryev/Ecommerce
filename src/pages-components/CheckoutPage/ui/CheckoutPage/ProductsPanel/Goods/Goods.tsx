@@ -3,7 +3,7 @@ import { classNames } from 'shared/lib/classNames/classNames';
 import { useTranslation } from 'react-i18next';
 import Image1 from 'shared/assets/test-products/img1.png';
 import cls from './Goods.module.scss';
-import GoodsItem from '../GoodsItem/GoodsItem';
+import GoodsItem from './GoodsItem/GoodsItem';
 
 interface GoodsProps {
   className?: string;

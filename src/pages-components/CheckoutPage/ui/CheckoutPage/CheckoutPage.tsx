@@ -3,8 +3,8 @@ import { classNames } from 'shared/lib/classNames/classNames';
 import { BreadCrumbs } from 'widgets/BreadCrumbs';
 import { Container } from 'shared/ui/Container';
 import cls from './CheckoutPage.module.scss';
-import UserPanel from '../UserPanel/UserPanel';
-import ProductsPanel from '../ProductsPanel/ProductsPanel';
+import UserPanel from './UserPanel/UserPanel';
+import ProductsPanel from './ProductsPanel/ProductsPanel';
 
 interface CheckoutPageProps {
   className?: string;

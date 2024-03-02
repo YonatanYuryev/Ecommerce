@@ -4,6 +4,10 @@ import { Input } from 'shared/ui/Input';
 import { InputTheme } from 'shared/ui/Input/ui/Input';
 import CardIcon from 'shared/assets/icons/Vector.svg';
 import { useTranslation } from 'react-i18next';
+import PaypalIcon from 'shared/assets/icons/payment/PayPal.svg';
+import VisaIcon from 'shared/assets/icons/payment/visa-logo.svg';
+import MastercardIcon from 'shared/assets/icons/payment/Mastercard.svg';
+import { Button, ThemeButton } from 'shared/ui/Button';
 import cls from './Payment.module.scss';
 
 interface PaymentProps {
@@ -28,51 +32,50 @@ const Payment: FC<PaymentProps> = (props) => {
                         {t('Способ оплаты')}
                     </span>
                     <div className={classNames(cls.PaymentMethodIcons)}>
-                        <img
+                        <div
                             className={classNames(cls.PaymentIcon)}
-                            src=""
-                            alt=""
-                        />
-                        <img
+                        >
+                            <VisaIcon />
+                        </div>
+                        <div
                             className={classNames(cls.PaymentIcon)}
-                            src=""
-                            alt=""
-                        />
-                        <img
+                        >
+                            <MastercardIcon />
+                        </div>
+                        <div
                             className={classNames(cls.PaymentIcon)}
-                            src=""
-                            alt=""
-                        />
+                        >
+                            <PaypalIcon />
+                        </div>
                     </div>
                 </div>
                 <div className={classNames(cls.InputWrapper)}>
-                    <span
+                    <label
+                        htmlFor="card info"
                         className={classNames(cls.Label)}
                     >
                         {t('Информация о карте')}
-                    </span>
-                    <label htmlFor="card info">
+                    </label>
+                    <label
+                        htmlFor="card info"
+                        className={classNames(cls.FieldWrapper)}
+                    >
                         <CardIcon />
                         <Input
+                            placeholder="0000&nbsp;0000&nbsp;0000&nbsp;0000&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;MM&nbsp;/&nbsp;YY&nbsp;&nbsp;&nbsp;&nbsp;CVV"
                             className={classNames(cls.Input)}
                             id="card info"
                             theme={InputTheme.CLEAR}
                         />
                     </label>
                 </div>
-                <div className={classNames(cls.InputWrapper)}>
-                    <label
-                        className={classNames(cls.Label)}
-                        htmlFor="phone"
-                    >
-                        {t('Номер телефона')}
-                    </label>
-                    <Input
-                        className={classNames(cls.Input)}
-                        id="phone"
-                        theme={InputTheme.CLEAR}
-                    />
-                </div>
+                <Button
+                    theme={ThemeButton.CLEAR}
+                    className={classNames(cls.PurchaseButton)}
+                >
+                    <p>{t('Купить за')}</p>
+                    <p>$248</p>
+                </Button>
             </div>
         </div>
     );

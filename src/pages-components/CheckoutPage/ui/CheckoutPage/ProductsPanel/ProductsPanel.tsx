@@ -1,8 +1,8 @@
 import { FC } from 'react';
 import { classNames } from 'shared/lib/classNames/classNames';
 import cls from './ProductsPanel.module.scss';
-import Goods from '../Goods/Goods';
-import Summary from '../Summary/Summary';
+import Goods from './Goods/Goods';
+import Summary from './Summary/Summary';
 
 interface ProductsPanelProps {
   className?: string;
