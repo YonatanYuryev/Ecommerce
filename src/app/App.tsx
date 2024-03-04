@@ -6,6 +6,7 @@ import { LangSwitcher } from 'widgets/LangSwitcher';
 import { Header } from 'widgets/Header';
 import { Footer } from 'widgets/Footer';
 import { CheckoutPage } from 'pages-components/CheckoutPage';
+import { ProductsPage } from 'pages-components/ProductsPage';
 import { AppRouter } from './providers/router';
 import { useTheme } from './providers/ThemeProvider/lib/useTheme';
 
@@ -19,7 +20,8 @@ const App: FC = () => {
                 {/* <LangSwitcher /> */}
                 {/* <ThemeSwitcher /> */}
                 {/* <AppRouter /> */}
-                <CheckoutPage />
+                {/* <CheckoutPage /> */}
+                <ProductsPage />
                 <Footer />
             </Suspense>
         </div>

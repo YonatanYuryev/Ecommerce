@@ -27,7 +27,7 @@ const LoginForm: FC<LoginFormProps> = (props) => {
                     {t('Логин')}
                 </Button>
                 <AppLink
-                    to='/reset'
+                    to="/reset"
                     className={classNames(cls.LostYourPassword)}
                 >
                     {t('Забыли пароль?')}
