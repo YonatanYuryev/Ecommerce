@@ -20,8 +20,8 @@ const App: FC = () => {
                 {/* <LangSwitcher /> */}
                 {/* <ThemeSwitcher /> */}
                 {/* <AppRouter /> */}
-                {/* <CheckoutPage /> */}
-                <ProductsPage />
+                <CheckoutPage />
+                {/* <ProductsPage /> */}
                 <Footer />
             </Suspense>
         </div>
