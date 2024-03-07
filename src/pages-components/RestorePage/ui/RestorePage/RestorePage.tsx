@@ -3,7 +3,7 @@ import { classNames } from 'shared/lib/classNames/classNames';
 import { Container } from 'shared/ui/Container';
 import { BreadCrumbs } from 'widgets/BreadCrumbs';
 import cls from './RestorePage.module.scss';
-import RestoreForm from '../RestoreForm/RestoreForm';
+import RestoreForm from './RestoreForm/RestoreForm';
 
 interface RestorePageProps {
   className?: string;

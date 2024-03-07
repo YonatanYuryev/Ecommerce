@@ -3,7 +3,7 @@ import { classNames } from 'shared/lib/classNames/classNames';
 import { Container } from 'shared/ui/Container';
 import { BreadCrumbs } from 'widgets/BreadCrumbs';
 import cls from './LoginPage.module.scss';
-import LoginForm from '../LoginForm/LoginForm';
+import LoginForm from './LoginForm/LoginForm';
 
 interface LoginPageProps {
   className?: string;

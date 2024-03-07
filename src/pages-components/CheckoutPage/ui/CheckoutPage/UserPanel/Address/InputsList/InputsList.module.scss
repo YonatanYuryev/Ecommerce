@@ -1,0 +1,14 @@
+.InputsList {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+  row-gap: 30px;
+}
+
+.RadioInputs {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 125px;
+}

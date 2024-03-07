@@ -1,0 +1,147 @@
+.Address {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.TitleWrapper {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.Title {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: -1px;
+}
+
+.Stick {
+  height: 1px;
+  width: 100%;
+  background-color: var(--primary-dark-5);
+}
+
+.InputsList {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+  row-gap: 30px;
+}
+
+.InputWrapper {
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.Label {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: -0.5px;
+  color: var(--label-color);
+  cursor: pointer;
+  transition: all .25s ease-in-out;
+  &:hover {
+    color: var(--accent-blue-2);
+  }
+}
+
+.RadioInputWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.RadioInputs {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 125px;
+}
+
+.RadioLabel {
+  color: var(--primary-dark-1);
+}
+
+.StandartLabel::after {
+  content: 'Free, 10 – 14 days';
+  margin-left: 10px;
+  color: var(--label-color);
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: -0.3px;
+  font-weight: 400;
+}
+
+.PremiumLabel::after {
+  content: '$10, 1 – 3 days';
+  margin-left: 10px;
+  color: var(--label-color);
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: -0.3px;
+  font-weight: 400;
+}
+
+.AddressInputWrapper, .WishesInputWrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.Input, .AddressInput {
+  appearance: none;
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid var(--primary-dark-5);
+  width: 275px;
+  cursor: pointer;
+  transition: all .25s ease-in-out;
+  &:focus-within {
+    border: 1px solid var(--accent-blue-2);
+  }
+}
+
+.AddressInputUpperSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ChooseOnMap {
+  color: var(--accent-blue-2);
+  font-size: 13px;
+  line-height: 15px;
+  font-weight: 500;
+  letter-spacing: -0.2px;
+  cursor: pointer;
+}
+
+.AddressInput {
+  width: calc(100% - 30px);
+  flex: 1;
+}
+
+.WishesInput {
+  width: calc(100% - 30px);
+  flex: 1;
+  appearance: none;
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid var(--primary-dark-5);
+  cursor: pointer;
+  &:focus-within {
+    border: 1px solid var(--accent-blue-2);
+  }
+  resize: vertical;
+  &::placeholder {
+    color: var(--label-color);
+  }
+}

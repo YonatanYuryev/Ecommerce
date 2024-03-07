@@ -2,9 +2,9 @@ import { FC } from 'react';
 import { classNames } from 'shared/lib/classNames/classNames';
 import { Container } from 'shared/ui/Container';
 import cls from './ProductsPage.module.scss';
-import ProductsTopControls from '../ProductsTopControls/ProductsTopControls';
-import ProductsFilters from '../ProductsFilters/ProductsFilters';
-import ProductsList from '../ProductsList/ProductsList';
+import ProductsTopControls from './ProductsTopControls/ProductsTopControls';
+import ProductsFilters from './ProductsFilters/ProductsFilters';
+import ProductsList from './ProductsList/ProductsList';
 
 interface ProductsPageProps {
   className?: string;

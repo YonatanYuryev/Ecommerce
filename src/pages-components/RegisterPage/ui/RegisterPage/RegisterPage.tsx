@@ -3,7 +3,7 @@ import { classNames } from 'shared/lib/classNames/classNames';
 import { Container } from 'shared/ui/Container';
 import { BreadCrumbs } from 'widgets/BreadCrumbs';
 import cls from './RegisterPage.module.scss';
-import RegisterForm from '../RegisterForm/RegisterForm';
+import RegisterForm from './RegisterForm/RegisterForm';
 
 interface RegisterPageProps {
   className?: string;
