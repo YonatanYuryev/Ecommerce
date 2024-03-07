@@ -1,0 +1,26 @@
+.Input {
+  background-color: transparent;
+  flex: 1;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px; 
+  letter-spacing: -0.5px;
+  cursor: pointer;
+}
+
+.Input.dark {
+  &::placeholder {
+    color: var(--inverted-dark-theme-placeholder);
+  }
+}
+.Input.light {
+  &::placeholder {
+    color: var(--primary-dark-4);
+  }
+}
+
+.clear {
+  outline: none;
+  border: none;
+}

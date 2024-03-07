@@ -1,0 +1,19 @@
+.SubscriptionInput {
+  background-color: var(--primary-light-1);
+  padding: 18px 87px 18px 20px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  & > svg {
+    margin-right: 10px;
+  }
+}
+
+.SubscriptionField {
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: -0.6px;
+  font-weight: 400;
+  flex: 1;
+}

@@ -1,0 +1,17 @@
+.ProductItem {
+  height: 48.09vh;
+  height: 450px;
+  width: 300px;
+  width: 100%;
+  cursor: pointer;
+  transition: transform 0.15s ease-in-out;
+  &:hover {
+    transform: scale(1.05);
+  }
+  @media (max-width: 767px) {
+    &:hover {
+      transform: none;
+      transition: none;
+    }
+  }
+}

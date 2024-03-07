@@ -1,0 +1,24 @@
+.SubscriptionControls {
+  margin-left: 155px;
+  display: flex;
+  gap: 15px;
+}
+
+.SubscribeButton {
+  height: 60px;
+  width: 136px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary-dark-1);
+  font-size: 20px;
+  line-height: 24px; 
+  letter-spacing: -0.6px;
+  font-weight: 500;
+  color: var(--primary-light-1);
+  border-radius: 10px;
+  transition: all .15s ease-in-out;
+  &:hover {
+    background-color: var(--primary-dark-2);
+  }
+}

@@ -1,0 +1,14 @@
+.ProductId {
+  margin-top: 5px;
+  color: var(--primary-dark-3);
+}
+
+.ProductPrice {
+  font-size: 20px;
+}
+
+.ProductAdditional {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}

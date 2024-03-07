@@ -1,0 +1,29 @@
+.Checkbox {
+  appearance: none;
+  width: 16.5px;
+  height: 16.5px;
+  border-radius: 5px;
+  background-color: transparent;
+  border: 1px solid var(--primary-dark-4);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Checkbox:disabled {
+  background-color: var(--primary-dark-5);
+  border: 1px solid transparent;
+}
+
+.Checkbox:checked {
+  background-color: var(--accent-blue-2);
+  border: 1px solid transparent;
+}
+
+.Checkbox:checked::after {
+  font-family: 'system-ui';
+  content: '\2713';
+  font-size: 12px;
+  color: var(--primary-light-1);
+}

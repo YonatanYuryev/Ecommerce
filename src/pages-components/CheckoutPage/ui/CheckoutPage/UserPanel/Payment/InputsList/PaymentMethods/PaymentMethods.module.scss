@@ -1,0 +1,28 @@
+.PaymentInputs {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.PaymentMethodIcons {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.PaymentIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 70px;
+  border: 1px solid var(--primary-dark-4);
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all .25s ease-in-out;
+  &:hover {
+    border: 1px solid var(--accent-blue-1);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  }
+}

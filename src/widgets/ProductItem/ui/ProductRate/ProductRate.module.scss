@@ -1,0 +1,35 @@
+.ProductRate {
+  margin-top: 5px;
+
+  svg:nth-child(1) {
+    margin-left: 0;
+  }
+
+  svg {
+    margin-left: 5px;
+    cursor: pointer;
+    & > path:hover {
+      fill: var(--accent-blue-3);
+      fill-opacity: 1;
+    }
+
+    & > path:active {
+      fill:var(--accent-blue-3);
+      fill-opacity: 1;
+    }
+  }
+}
+
+.RateStar {
+  path {
+    fill: var(--primary-dark-1);
+    fill-opacity: 0.1;
+  }
+}
+
+.RateStar.hovered {
+  path {
+    fill: var(--accent-blue-3);
+    fill-opacity: 1;
+  }
+}

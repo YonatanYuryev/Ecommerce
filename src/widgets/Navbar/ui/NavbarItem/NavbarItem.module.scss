@@ -1,0 +1,32 @@
+.NavbarItem {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--primary-dark-3);
+  margin-left: 30px;
+  cursor: pointer;
+}
+
+.NavbarItem:nth-child(1) {
+  margin-left: 0;
+}
+.NavbarItem:nth-child(2) {
+  margin-left: 40px;
+}
+
+.NavbarItem.active.light {
+  color: var(--primary-dark-1);
+}
+
+.NavbarItem.active.dark {
+  color: var(--primary-light-1);
+}
+
+.NavbarItem.light {
+  color: var(--primary-dark-3);
+}
+
+.NavbarItem.dark {
+  color: var(--grey-light-4);
+}

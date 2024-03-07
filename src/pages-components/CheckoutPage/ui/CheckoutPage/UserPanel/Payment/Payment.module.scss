@@ -1,0 +1,25 @@
+.Payment {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.TitleWrapper {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.Title {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: -1px;
+}
+
+.Stick {
+  height: 1px;
+  width: 100%;
+  background-color: var(--primary-dark-5);
+}

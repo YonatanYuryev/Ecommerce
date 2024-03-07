@@ -1,0 +1,18 @@
+.HeaderControls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+.Icon.dark {
+  path {
+    fill: var(--primary-light-1);
+  }
+}
+
+.Icon.light {
+  path {
+    fill: var(--primary-dark-1);
+  }
+}
