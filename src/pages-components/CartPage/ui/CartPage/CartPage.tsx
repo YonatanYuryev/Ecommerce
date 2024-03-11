@@ -5,7 +5,7 @@ import { BreadCrumbs } from 'widgets/BreadCrumbs';
 import { useTranslation } from 'react-i18next';
 import cls from './CartPage.module.scss';
 import Summary from './Summary/Summary';
-import Products from './Products/Products';
+import Products from './ProductsList/ProductsList';
 
 interface CartPageProps {
   className?: string;

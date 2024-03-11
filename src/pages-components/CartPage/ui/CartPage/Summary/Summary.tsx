@@ -2,6 +2,8 @@ import { FC } from 'react';
 import { classNames } from 'shared/lib/classNames/classNames';
 import { useTranslation } from 'react-i18next';
 import cls from './Summary.module.scss';
+import Promo from './Promo/Promo';
+import CheckoutButton from './CheckoutButton/CheckoutButton';
 
 interface SummaryProps {
   className?: string;
@@ -13,15 +15,8 @@ const Summary: FC<SummaryProps> = (props) => {
 
     return (
         <div className={classNames(cls.Summary, {}, [className])}>
-            <h4>{t('Краткое содержание')}</h4>
-            <div className={classNames(cls.PromoSection)}>
-                <input type="text" placeholder="Promo Code" />
-                <button
-                    className={classNames(cls.ApplyButton)}
-                >
-                    {t('Применить')}
-                </button>
-            </div>
+            <h4 className={classNames(cls.Title)}>{t('Краткое содержание')}</h4>
+            <Promo />
             <div className={classNames(cls.Subtotal)}>
                 <p>{t('Промежуточный итог')}</p>
                 <span>$290.00</span>
@@ -34,11 +29,7 @@ const Summary: FC<SummaryProps> = (props) => {
                 <p>{t('Итого')}</p>
                 <span>$298</span>
             </div>
-            <button
-                className={classNames(cls.CheckoutButton)}
-            >
-                {t('Оплатить')}
-            </button>
+            <CheckoutButton />
         </div>
     );
 };
