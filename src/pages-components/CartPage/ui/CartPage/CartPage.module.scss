@@ -1,0 +1,22 @@
+.CartPage {
+  min-height: 700px;
+}
+
+.Breadcrumbs {
+  margin-bottom: 42px;
+  margin-top: 30px;
+}
+
+.CartTitle {
+  font-size: 3rem;
+  font-weight: 500;
+  line-height: 54px;
+  letter-spacing: -1.6px;
+  margin-bottom: 30px;
+}
+
+.CartContent {
+  display: flex;
+  justify-content: space-between;
+  gap: 77px;
+}

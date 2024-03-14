@@ -1,0 +1,45 @@
+.Summary {
+  width: 20.05vw;
+  max-height: calc(445px - 46px);
+  padding: 23px 30px;
+  border: 1px solid var(--primary-dark-5);
+  border-radius: 5px;
+}
+
+.Title {
+  font-size: 28px;
+  font-weight: 500;
+  color: var(--primary-dark-1);
+  line-height: 34px;
+  letter-spacing: -0.8px;
+  margin-bottom: 26px;
+}
+
+.Subtotal, .EstimatedShippingHandling {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 15px;
+  line-height: 23px;
+  letter-spacing: -0.6px;
+  font-weight: 400;
+  margin-bottom: 16px;
+}
+
+.EstimatedShippingHandling {
+  margin-bottom: 30px;
+}
+
+.Total {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid var(--primary-dark-5);
+  border-bottom: 1px solid var(--primary-dark-5);
+  padding: 28px 0;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: -0.6px;
+  margin-bottom: 30px;
+}

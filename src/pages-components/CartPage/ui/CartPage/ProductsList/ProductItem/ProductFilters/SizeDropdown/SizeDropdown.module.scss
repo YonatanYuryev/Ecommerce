@@ -1,0 +1,41 @@
+.SizeQuantity {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: fit-content;
+  gap: 10px;
+  box-sizing: border-box;
+}
+
+.SizeLabel {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+  letter-spacing: -0.2px;
+  color: var(--primary-dark-4);
+}
+
+.Dropdown {
+  width: 166px;
+  // width: 11.09vw;
+  position: relative;
+}
+
+.DefaultItem {
+  width: 100%;
+  padding: 11px 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 10px;
+  border: 1px solid var(--primary-dark-5);
+  cursor: pointer;
+}
+
+.Label {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: -0.5px;
+}

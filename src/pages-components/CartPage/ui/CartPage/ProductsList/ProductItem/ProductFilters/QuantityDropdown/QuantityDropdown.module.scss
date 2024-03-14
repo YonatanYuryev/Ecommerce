@@ -1,0 +1,54 @@
+.QuantityDropdown {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  gap: 10px;
+  margin-left: 16px;
+}
+
+
+.QuantityLabel {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+  letter-spacing: -0.2px;
+  color: var(--primary-dark-4);
+}
+
+.Dropdown {
+  // width: 6.28vw;
+  width: 94px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 10px;
+  border: 1px solid var(--primary-dark-5);
+}
+
+.DefaultValue {
+  width: calc(94px - 31px);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid var(--primary-dark-5);
+}
+
+.ControlsWrapper {
+  width: 31px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Controls {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.VectorUp, .VectorDown {
+  cursor: pointer;
+}
