@@ -14,8 +14,10 @@ const ProductFilters: FC<ProductFiltersProps> = (props) => {
 
     return (
         <div className={classNames(cls.ProductFilters, {}, [className])}>
-            <SizeDropdown />
-            <QuantityDropdown />
+            <div className={classNames(cls.Dropdowns)}>
+                <SizeDropdown />
+                <QuantityDropdown />
+            </div>
             <RemoveButton />
         </div>
     );

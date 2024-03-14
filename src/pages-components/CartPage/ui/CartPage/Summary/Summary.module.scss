@@ -1,9 +1,9 @@
 .Summary {
   width: 20.05vw;
+  max-height: calc(445px - 46px);
   padding: 23px 30px;
   border: 1px solid var(--primary-dark-5);
   border-radius: 5px;
-  margin-bottom: 20px;
 }
 
 .Title {

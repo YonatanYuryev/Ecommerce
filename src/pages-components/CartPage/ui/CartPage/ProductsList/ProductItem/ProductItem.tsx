@@ -15,14 +15,17 @@ const ProductItem: FC<ProductItemProps> = (props) => {
 
     return (
         <div className={classNames(cls.ProductItem, {}, [className])}>
-            <img
-                src={Image}
-                alt=""
-                className={classNames(cls.Image)}
-            />
+            <div className={classNames(cls.ImageWrapper)}>
+                <img
+                    src={Image}
+                    alt=""
+                    className={classNames(cls.Image)}
+                />
+                <span className={classNames(cls.Sale)}>-15%</span>
+            </div>
             <div className={classNames(cls.Info)}>
                 <div className={classNames(cls.Id)}>#7777</div>
-                <div>
+                <div className={classNames(cls.TitlePriceWrapper)}>
                     <p className={classNames(cls.Title)}>{title}</p>
                     <span className={classNames(cls.Price)}>$35</span>
                 </div>

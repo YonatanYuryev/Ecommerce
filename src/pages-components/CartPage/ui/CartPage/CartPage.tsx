@@ -18,7 +18,7 @@ const CartPage: FC<CartPageProps> = (props) => {
     return (
         <div className={classNames(cls.CartPage, {}, [className])}>
             <Container>
-                <BreadCrumbs />
+                <BreadCrumbs className={classNames(cls.Breadcrumbs)} />
                 <h2 className={classNames(cls.CartTitle)}>{t('Корзина')}</h2>
                 <div className={classNames(cls.CartContent)}>
                     <Products />
