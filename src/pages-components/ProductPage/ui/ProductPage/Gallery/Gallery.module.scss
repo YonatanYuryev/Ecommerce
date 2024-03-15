@@ -1,0 +1,28 @@
+.Gallery {
+  width: 56.8vw;
+  height: 156.6vh;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.ImageWrapper {
+  height: calc(50% - 5px);
+  width: calc(50% - 5px);
+  overflow: hidden;
+  cursor: pointer;
+  &:hover > .Image {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+  }
+}
+
+
+.Image {
+  height: 100%;
+  width: 100%;
+  -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
