@@ -1,0 +1,23 @@
+.Colors {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 27px;
+}
+
+.ColorItem {
+  width: 5.34;
+  // height: 9.84vh;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  cursor: pointer;
+  &:hover {
+    border: 1px solid var(--accent-blue-2);
+  }
+}
+
+.Image {
+  width: 100%;
+  height: 100%;
+}

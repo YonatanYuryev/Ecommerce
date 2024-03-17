@@ -1,0 +1,30 @@
+.AdditionalInfo {
+  width: 100%;
+}
+
+.DetailTitle {
+  width: 100%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: -0.3px;
+  margin-bottom: 5px;
+}
+
+.DetailsList {
+  display: flex;
+  flex-direction: column;
+  // gap: 5px;
+}
+
+.Detail {
+  line-height: 23px;
+  font-weight: 400;
+  font-size: 0.938rem;
+  letter-spacing: -0.6px;
+  color: var(--primary-dark-3);
+}

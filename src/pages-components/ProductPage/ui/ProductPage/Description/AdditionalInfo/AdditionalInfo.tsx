@@ -1,5 +1,6 @@
 import { FC } from 'react';
 import { classNames } from 'shared/lib/classNames/classNames';
+import Angle from 'shared/assets/icons/angle-down.svg';
 import cls from './AdditionalInfo.module.scss';
 
 interface AdditionalInfoProps {
@@ -18,7 +19,10 @@ const AdditionalInfo: FC<AdditionalInfoProps> = (props) => {
 
     return (
         <div className={classNames(cls.AdditionalInfo, {}, [className])}>
-            <span className={classNames(cls.DetailTitle)}>{details}</span>
+            <span className={classNames(cls.DetailTitle)}>
+                {details}
+                <Angle />
+            </span>
             <ul className={classNames(cls.DetailsList)}>
                 <li className={classNames(cls.Detail)}>{detail1}</li>
                 <li className={classNames(cls.Detail)}>{detail2}</li>

@@ -15,7 +15,7 @@ const MainInfo: FC<MainInfoProps> = (props) => {
         <div className={classNames(cls.MainInfo, {}, [className])}>
             <span className={classNames(cls.Sale)}>-15%</span>
             <h4 className={classNames(cls.Title)}>{title}</h4>
-            <p>{description}</p>
+            <p className={classNames(cls.Description)}>{description}</p>
             <span className={classNames(cls.Price)}>$35</span>
         </div>
     );
