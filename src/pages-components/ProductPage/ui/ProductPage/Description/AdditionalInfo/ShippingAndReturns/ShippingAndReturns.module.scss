@@ -1,0 +1,24 @@
+.ShippingAndReturns {
+  width: 100%;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--primary-dark-5);
+}
+
+.ShippingAndReturnsTitle {
+  width: 100%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: -0.3px;
+  margin-bottom: 5px;
+}
+
+.ShippingAndReturnsAngleDown {
+  path {
+    fill: var(--primary-dark-4);
+  }
+}

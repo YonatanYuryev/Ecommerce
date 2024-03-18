@@ -1,0 +1,60 @@
+.SizeText {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 18px;
+  letter-spacing: -0.5px;
+  margin-bottom: 20px;
+}
+
+.SizeLabel {
+  color: var(--label-color);
+}
+
+.SizeGuideLink {
+  color: var(--accent-blue-2);
+  cursor: pointer;
+}
+
+.Dropdown {
+  width: 100%;
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.DefaultItem {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 11px 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 10px;
+  border: 1px solid var(--primary-dark-5);
+  cursor: pointer;
+}
+
+.Text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: -0.5px;
+}
+
+.AddToBagButton {
+  width: 281px;
+  height: 60px;
+  background-color: var(--accent-blue-2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-weight: 500;
+  font-size: 1.25rem;
+  line-height: 24px;
+  letter-spacing: -0.6px;
+  color: var(--primary-light-1);
+  border-radius: 10px;
+}
