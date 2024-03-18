@@ -1,8 +1,10 @@
-.AdditionalInfo {
+.ShippingAndReturns {
   width: 100%;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--primary-dark-5);
 }
 
-.DetailTitle {
+.ShippingAndReturnsTitle {
   width: 100%;
   cursor: pointer;
   display: flex;
@@ -15,7 +17,7 @@
   margin-bottom: 5px;
 }
 
-.DeatilsAngleDown {
+.ShippingAndReturnsAngleDown {
   path {
     fill: var(--primary-dark-4);
   }

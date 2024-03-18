@@ -3,8 +3,16 @@
   margin-bottom: 42px;
 }
 
-.Content {
+.MainContent {
   display: flex;
   justify-content: space-between;
   gap: 77px;
+  padding-bottom: 77px;
+  border-bottom: 1px solid var(--primary-dark-5);
+  margin-bottom: 50px;
+}
+
+.Pagination {
+  margin: 0 auto;
+  margin-bottom: 48px;
 }

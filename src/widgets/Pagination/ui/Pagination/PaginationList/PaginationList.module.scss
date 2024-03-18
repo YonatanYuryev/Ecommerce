@@ -1,0 +1,30 @@
+.PaginationList {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  flex: 1;
+}
+
+.PaginationItem, .PaginationItem.active {
+  display: flex;
+  height: 100%;
+  width: calc(100% / 5);
+  align-items: center;
+  justify-content: center;
+  color: var(--primary-dark-4);
+  cursor: pointer;
+}
+
+.PaginationItem.active {
+  background-color: var(--accent-blue-2);
+  color: var(--primary-light-1);
+}
+
+.PaginationItem {
+  transition: all .1s ease-in-out;
+  &:hover {
+    background-color: var(--accent-blue-2);
+    color: var(--primary-light-1);
+  }
+}

@@ -1,0 +1,15 @@
+.Details {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 19px;
+  border-bottom: 1px solid var(--primary-dark-5);
+  margin-bottom: 10px;
+}
+
+.Detail {
+  line-height: 23px;
+  font-weight: 400;
+  font-size: 0.938rem;
+  letter-spacing: -0.6px;
+  color: var(--primary-dark-3);
+}
